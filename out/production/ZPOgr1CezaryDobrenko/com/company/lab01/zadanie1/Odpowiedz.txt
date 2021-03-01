@@ -1,0 +1,15 @@
+Różnice wzorca strategia od implementacji interface:
+
+Nie jesteśmy w stanie zmienić interface w trakcie działania kodu, wzorzec strategia nie ma tego problemu.
+
+Zalety:
+
+1. Ogarniczenie ilości wyrażeń warunkowych.
+2. Struktura kodu pozwala na proste dodawanie i zmienianie algorytmów np. sortowania.
+3. Unikamy spagetti zarówno przy czytaniu jak i testowaniu kodu.
+
+Wady:
+
+1. Duuużo więcej klas.
+2. Pobieranie danych z klasy kontekstu wymaga zasotoswania większej logiki.
+3. Dodatkowy koszt komunikacji między klientem a strategią (wywołania metod, przekazywanie danych).
