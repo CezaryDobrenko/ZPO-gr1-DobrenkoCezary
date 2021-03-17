@@ -1,0 +1,7 @@
+Wzorzec obserwatora jest używany, gdy istnieje relacja jeden do wielu między obiektami,
+na przykład jeśli jeden obiekt jest modyfikowany, jego zależne obiekty mają być powiadamiane
+automatycznie. Wzorzec obserwatora należy do kategorii wzorców behawioralnych.
+
+Obserwator najczęściej jest stosowany w aplikacjach z graficznym interfejsem użytkownika.
+Rozpatrzmy mechanizm kopiowania pliku oraz okienko graficzne obrazujące postęp prac.
+Mechanizm kopiujący jest niezależny od okienka i nie musi wiedzieć czy i w jaki sposób postępy są wyświetlane.
