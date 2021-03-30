@@ -87,8 +87,6 @@ public class Editor extends JPanel {
     }
 
     public void undoLastChange() {
-        System.out.println(this.rectHeight);
-        System.out.println(this.lastHeight);
         if(this.state == stateColor){
             this.rectColor = lastColor;
         } else if (this.state == stateHeight){
@@ -98,8 +96,6 @@ public class Editor extends JPanel {
         } else {
             System.out.println("Nie mam zarejestrowanej żadnej akcji");
         }
-        System.out.println(this.rectHeight);
-        System.out.println(this.lastHeight);
         this.repaint();
     }
 

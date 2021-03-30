@@ -10,6 +10,6 @@ public class IntrestChange implements Operation{
     }
 
     public void execute(){
-
+        account.changeIntrest(instest);
     }
 }
