@@ -1,0 +1,4 @@
+Wzorzec dekorator pozwala na dodanie nowej funkcji do istniejących klas dynamicznie podczas działania programu.
+Zasada działania wzorca dekorator polega na opakowaniu bazowej klasy, klasą dekorującą.
+
+Wzorzec projektowy dekorator jest wykorzystywany przy operacjach na plikach lub dekoratory kolekcji.
