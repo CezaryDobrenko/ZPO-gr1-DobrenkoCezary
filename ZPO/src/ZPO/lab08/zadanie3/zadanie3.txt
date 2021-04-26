@@ -1,0 +1,3 @@
+Django implementuje charakterystyczny dla tego frameworka wzorzec MVT (Model, View, Template).
+Poszczególny blok może zostać całościowo lub częściowo nadpisany lub zmieniony bez potrzeby ingerencji w pozostałą strukturę szablonu.
+Ułatwia to zarządzanie szablonami i zwiększa ich elastyczność.
