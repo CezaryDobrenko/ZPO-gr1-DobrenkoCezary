@@ -1,0 +1,2 @@
+Adapter jest używany, gdy wrapper musi uwzględniać określony interfejs i musi obsługiwać zachowanie polimorficzne.
+Fasada jest używana, gdy chce się łatwiejszego lub prostszego interfejsu do pracy.
