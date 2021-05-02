@@ -8,9 +8,10 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public final class FinancialData {
 
-    private static final Map<String, Period> periods;
+    private static final Map<String, FinancialData> periods;
 
     private final String name;
+    private final double value;
 
     static {
         periods = new ConcurrentHashMap<>();
@@ -20,7 +21,7 @@ public final class FinancialData {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] pair = line.split(":");
-                periods.put(pair[0], new Period(Double.parseDouble(pair[1])));
+                periods.put(pair[0], new FinancialData(pair[0], Double.parseDouble(pair[1])));
             }
         } catch (IOException e) {
             System.out.println("scanner error");
@@ -28,16 +29,17 @@ public final class FinancialData {
         }
     }
 
-    private FinancialData(String name) {
+    private FinancialData(String name, double value) {
         this.name = name;
+        this.value = value;
     }
 
-    public static Period getInstance(String name) {
+    public static FinancialData getInstance(String name) {
         return periods.get(name);
     }
 
-    public String getValue() {
-        return name;
+    public double getValue() {
+        return value;
     }
 }
 
