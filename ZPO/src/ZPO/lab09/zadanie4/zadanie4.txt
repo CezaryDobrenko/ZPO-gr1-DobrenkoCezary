@@ -1,0 +1,24 @@
+Standardowa implementacja singletona (przykładowa implementacja znajduje się w pliku Singleton standard)
+
+a) Zalety
+    1. Bardzo łatwy w implementacji
+
+b) Wady
+    1. Prowadzi do marnowania zasobów gdyż instacja jest tworzona niezależnie od tego czy jest potrzebna czy nie.
+    2. Marnowanie czasu procesora jaki potrzebuje aby stworzyć dodatkową instację gdy nie jest to wymagane
+    3. Brak możliwości definiowania wyjątków i ich obsługi.
+
+
+Thread Safe implementacja singletona (przykładowa implementacja znajduje się w pliku SingletonThreadSafe)
+
+a) Zalety
+1. Lazy initialization jest dalej możliwe pomimo zsynchronizowania metody getInstance().
+2. Jest thread safe co pozwala go dalej uzywać w programch wykorzystujących wiele wątków.
+
+b) Wady
+1. Metoda getInstance() zostałą zsynchronizowana co powoduje obniżenie wydajności ponieważ kilka wątków nie może naraz uzyskać dostępu.
+
+
+Wykorzystanie
+Podczas tworzenia menu głównego w aplikacjach opartych o Unity często stosujemy singletona wraz z kontrolą współbieżnego dostępu
+z powodu globalnego charakteru tego komponentu.

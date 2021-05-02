@@ -1,0 +1,12 @@
+Singleton to kontrowersyjny wzorzec, który przez część środowiska programistycznego określany jest mianem antywzorca.
+
+Singleton jest używany m.in. w:
+a) java.lang.Runtime
+b) java.awt.Desktop
+
+Najczęstszym i najbezpieczniejszym (w kontekście poprawności) użyciem wzorca singleton jest:
+
+Logowanie (rejestrowanie aktywności) jest szczególnym przykładem „akceptowalnego” singletona, ponieważ nie wpływa na wykonanie kodu.
+Włączanie i wyłączanie logowanie nie wpływa na działanie aplikacji opartej o ten wzorzec logowania. Dzieje się tak, ponieważ informacje
+zostają wysyłane jednokierunkowo, z aplikacji do loggera. Pomimo że Loggery określone w ten sposób są global state to są akceptowane ponieważ
+żadna inforamcja z loggera nie trafia ponownie do aplikacji.
